@@ -53,3 +53,4 @@ def read_dir(folder):
 read_dir(main_path)
 
 print("test")
+print("test2")
