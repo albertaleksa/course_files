@@ -2,6 +2,9 @@ from bs4 import BeautifulSoup
 import urllib.request
 import ssl
 
+# Documentation
+# https://www.crummy.com/software/BeautifulSoup/bs4/doc.ru/bs4ru.html#
+
 
 def get_html(url):
     context = ssl._create_unverified_context()
