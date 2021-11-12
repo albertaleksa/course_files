@@ -53,11 +53,12 @@ class Moderator(User):
         return f"{self.full_name()} removed a post from the {self.community} community"
 
 
-print(User.display_active_users())
-u1 = User("Tom", "Garcia", 35)
-u2 = User("Tom", "Garcia", 35)
-u3 = User("Tom", "Garcia", 35)
-jasmine = Moderator("Jasmine", "O'conner", 61, "Piano")
-jasmine2 = Moderator("Jasmine", "O'conner", 61, "Piano")
-print(User.display_active_users())
-print(Moderator.display_active_mods())
+if __name__ == "__main__":
+    print(User.display_active_users())
+    u1 = User("Tom", "Garcia", 35)
+    u2 = User("Tom", "Garcia", 35)
+    u3 = User("Tom", "Garcia", 35)
+    jasmine = Moderator("Jasmine", "O'conner", 61, "Piano")
+    jasmine2 = Moderator("Jasmine", "O'conner", 61, "Piano")
+    print(User.display_active_users())
+    print(Moderator.display_active_mods())
