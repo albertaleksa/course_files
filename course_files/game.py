@@ -28,6 +28,11 @@ class Deck:
         # return f"Deck of {self.count()} cards"
         return "Deck of {} cards".format(self.count())
 
+    def __iter__(self):
+        # for card in self.cards:   # using generators
+        #     yield card
+        return iter(self.cards)
+
     def count(self):
         return len(self.cards)
 
@@ -57,6 +62,10 @@ deck = Deck()
 print(deck.count())
 print(deck)
 deck.shuffle()
+
+for card in deck:
+    print(card)
+
 card = deck.deal_card()
 print(card)
 hand = deck.deal_hand(100)
