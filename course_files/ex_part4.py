@@ -59,12 +59,45 @@ print("-----------------------")
 
 
 def find_greater_numbers(lst):
-    pass
+    count = 0
+    for i in range(len(lst)):
+        for j in range(i+1, len(lst)):
+            if lst[i] < lst[j]:
+                count += 1
+    return count
 
 
-find_greater_numbers([1,2,3]) # 3
-find_greater_numbers([6,1,2,7]) # 4
-find_greater_numbers([5,4,3,2,1]) # 0
-find_greater_numbers([]) # 0
+print(find_greater_numbers([1,2,3])) # 3
+print(find_greater_numbers([6,1,2,7])) # 4
+print(find_greater_numbers([5,4,3,2,1])) # 0
+print(find_greater_numbers([])) # 0
 
+print("-----------------------")
+
+# Ex. 125
+
+
+def two_oldest_ages(lst):
+    lst.sort()
+    return lst[-2:]
+
+
+print(two_oldest_ages( [1, 2, 10, 8] )) # [8, 10]
+print(two_oldest_ages( [6,1,9,10,4] )) # [9,10]
+print(two_oldest_ages( [4,25,3,20,19,5] )) # [20,25]
+
+print("-----------------------")
+
+# Ex. 125
+
+
+def is_odd_string(string):
+    return sum(ord(char)-96 for char in string.lower()) % 2 == 1
+
+
+print(is_odd_string('a')) # True
+print(is_odd_string('aaaa')) # False
+print(is_odd_string('amazing')) # True
+print(is_odd_string('veryfun')) # True
+print(is_odd_string('veryfunny')) # False
 
