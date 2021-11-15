@@ -57,18 +57,21 @@ class Deck:
     def deal_hand(self, number):
         return self._deal(number)
 
+def run():
+    deck = Deck()
+    print(deck.count())
+    print(deck)
+    deck.shuffle()
 
-deck = Deck()
-print(deck.count())
-print(deck)
-deck.shuffle()
+    for card in deck:
+        print(card)
 
-for card in deck:
+    card = deck.deal_card()
     print(card)
+    hand = deck.deal_hand(100)
+    print(hand)
+    print(deck)
 
-card = deck.deal_card()
-print(card)
-hand = deck.deal_hand(100)
-print(hand)
-print(deck)
 
+if __name__ == "__main__":
+    run()
