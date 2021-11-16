@@ -5,15 +5,17 @@ def running_average():
     When the function returned is passed a value,
     the function returns the current average of all previous function calls
     """
-    avg = 0
     count = 0
+    summ = 0
 
     def helper(num):
-        nonlocal avg
         nonlocal count
+        nonlocal summ
         count += 1
-        avg = (avg * (count-1) + num) / count
+        summ += num
+        avg = summ / count
         return round(avg, 2)
+
     return helper
 
 
