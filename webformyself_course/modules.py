@@ -1,4 +1,4 @@
-from course_files import my_libs
+from webformyself_course import my_libs
 import sys
 
 print(__name__)

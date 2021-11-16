@@ -1,4 +1,4 @@
-from course_files.timeit import Timer
+from webformyself_course.timeit import Timer
 
 code1 = """\
 def sumEvenAfterQueries(nums, queries):

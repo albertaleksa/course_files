@@ -1,4 +1,4 @@
-from course_files.website_parsing import WebParser
+from webformyself_course.website_parsing import WebParser
 
 
 def main():

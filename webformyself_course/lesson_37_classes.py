@@ -1,5 +1,5 @@
 
-from course_files.person import Person, Employee
+from webformyself_course.person import Person, Employee
 
 person = Person('John', 30)
 person.age = 35
