@@ -1,5 +1,5 @@
 import unittest
-from course_files.activities import eat, nap, is_funny, laugh
+from p3_bootcamp.activities import eat, nap, is_funny, laugh
 
 
 class ActivityTests(unittest.TestCase):

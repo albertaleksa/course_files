@@ -1,5 +1,5 @@
 import unittest
-from course_files.game import Card, Deck
+from p3_bootcamp.game import Card, Deck
 
 
 class CardTests(unittest.TestCase):
